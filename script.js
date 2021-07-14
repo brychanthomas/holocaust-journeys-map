@@ -10,15 +10,16 @@ class Journey {
 
   displayNextPlace() {
     this.index++;
-    if (this.index < this.places.length) {
+    if (this.index < this.places.length-1) {
       let p = this.places[this.index];
       this.polyline.addLatLng([p.lat, p.lng]);
       this.marker.setLatLng([p.lat, p.lng]);
       this.marker.bindPopup(p.desc, {closeButton: false}).openPopup();
       map.flyTo([p.lat, p.lng], p.zoom, {duration: 1});
-    } else if (this.index == this.places.length) {
+    } else if (this.index == this.places.length-1) {
       this.marker.closePopup();
       map.flyToBounds(this.polyline.getBounds());
+      this.polyline.bindPopup(this.places[this.index].desc).openPopup();
     }
     else {
       this.endJourney();
