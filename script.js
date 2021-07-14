@@ -11,6 +11,7 @@ class Journey {
     let p = this.places[this.index];
     map.flyTo([p.lat, p.lng], p.zoom);
     this.marker.setLatLng([p.lat, p.lng]);
+    this.marker.bindPopup(p.desc).openPopup();
   }
 }
 
@@ -21,5 +22,10 @@ var osmMapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var j = new Journey([{lat: 51, lng: -3, zoom: 8}]);
+var j = new Journey([
+  {lat: 51, lng: -3, zoom: 8, desc: "Cornwall"},
+  {lat: 70, lng: 21, zoom: 5, desc: "Not cornwall"}
+]);
+
+setTimeout(j.displayNextPlace.bind(j), 2000);
 
