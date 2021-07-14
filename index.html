@@ -17,13 +17,17 @@
         z-index: 999;
         text-align: center;
       }
+      #nextButton {
+        margin-bottom: 150%;
+        margin-left: -100%
+      }
     </style>
   </head>
   <body>
     <div id="mapid"></div>
 
     <div class="leaflet-bottom leaflet-right">
-      <input type="button" value="Next" onclick="activeJourney.displayNextPlace()"></input>
+      <input type="button" id="nextButton" value="Next" onclick="activeJourney.displayNextPlace()"></input>
     </div>
 
     <div id="peopleDropdownDiv">
