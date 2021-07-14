@@ -3,6 +3,7 @@ class Journey {
     this.places = data;
     this.index = -1;
     this.marker = L.marker([0,0]).addTo(map);
+    this.setDropdownVisibility(false);
     this.displayNextPlace();
   }
 
@@ -18,10 +19,23 @@ class Journey {
     }
   }
 
+  setDropdownVisibility(vis) {
+    document.getElementById("peopleDropdownDiv").style.display = vis ? "block" : "none";
+  }
+
   endJourney() {
     map.removeLayer(this.marker);
-    map.setView([50, 14], 4);
+    map.flyTo([50, 14], 4);
+    this.setDropdownVisbility(vis);
   }
+}
+
+var activeJourney;
+var journeys;
+
+function loadJourney() {
+  let name = document.getElementById("peopleSelect").value;
+  activeJourney = new Journey(journeysList[name]);
 }
 
 var map = L.map('mapid').setView([50, 14], 4);
@@ -31,8 +45,7 @@ var osmMapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var journey = new Journey([
-  {lat: 51, lng: -3, zoom: 8, desc: "Cornwall"},
-  {lat: 70, lng: 21, zoom: 5, desc: "Not cornwall"}
-]);
+fetch("journeys.json")
+  .then(response => response.json())
+  .then(json => journeysList = json);
 
