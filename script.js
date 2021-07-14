@@ -3,6 +3,7 @@ class Journey {
     this.places = data;
     this.index = -1;
     this.marker = L.marker([0,0]).addTo(map);
+    this.polyline = L.polyline([], {color: 'red'}).addTo(map);
     this.setDropdownVisibility(false);
     this.displayNextPlace();
   }
@@ -11,9 +12,10 @@ class Journey {
     this.index++;
     if (this.index < this.places.length) {
       let p = this.places[this.index];
-      map.flyTo([p.lat, p.lng], p.zoom);
+      this.polyline.addLatLng([p.lat, p.lng]);
       this.marker.setLatLng([p.lat, p.lng]);
       this.marker.bindPopup(p.desc).openPopup();
+      map.flyTo([p.lat, p.lng], p.zoom, {duration: 1});
     } else {
       this.endJourney();
     }
@@ -25,6 +27,7 @@ class Journey {
 
   endJourney() {
     map.removeLayer(this.marker);
+    map.removeLayer(this.polyline);
     map.flyTo([50, 14], 4);
     this.setDropdownVisibility(true);
   }
