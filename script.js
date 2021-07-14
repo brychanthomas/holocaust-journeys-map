@@ -26,7 +26,7 @@ class Journey {
   endJourney() {
     map.removeLayer(this.marker);
     map.flyTo([50, 14], 4);
-    this.setDropdownVisbility(vis);
+    this.setDropdownVisibility(true);
   }
 }
 
