@@ -17,6 +17,7 @@ class Journey {
       this.marker.bindPopup(p.desc, {closeButton: false}).openPopup();
       map.flyTo([p.lat, p.lng], p.zoom, {duration: 1});
     } else if (this.index == this.places.length) {
+      this.marker.closePopup();
       map.flyToBounds(this.polyline.getBounds());
     }
     else {
