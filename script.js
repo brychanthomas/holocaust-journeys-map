@@ -14,9 +14,12 @@ class Journey {
       let p = this.places[this.index];
       this.polyline.addLatLng([p.lat, p.lng]);
       this.marker.setLatLng([p.lat, p.lng]);
-      this.marker.bindPopup(p.desc).openPopup();
+      this.marker.bindPopup(p.desc, {closeButton: false}).openPopup();
       map.flyTo([p.lat, p.lng], p.zoom, {duration: 1});
-    } else {
+    } else if (this.index == this.places.length) {
+      map.flyToBounds(this.polyline.getBounds());
+    }
+    else {
       this.endJourney();
     }
   }
