@@ -7,10 +7,32 @@
         height: 100%;
         width: 100%;
       }
+      input {
+        pointer-events: auto;
+      }
+      #peopleDropdownDiv {
+        position: absolute;
+        top: 30%;
+        width: 97%;
+        z-index: 999;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <div id="mapid"></div>
+
+    <div class="leaflet-bottom leaflet-right">
+      <input type="button" value="Next" onclick="journey.displayNextPlace()"></input>
+    </div>
+
+    <div id="peopleDropdownDiv">
+      <select id="peopleSelect">
+        <option value="Primo Levi">Primo Levi</option>
+        <option value="Joe bloggs">Joe bloggs</option>
+      </select>
+    </div>
+
   </body>
   <script src="script.js"></script>
 </html>
