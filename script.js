@@ -55,5 +55,14 @@ var osmMapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 
 fetch("journeys.json")
   .then(response => response.json())
-  .then(json => journeysList = json);
+  .then(json => {
+    journeysList = json;
+    var select = document.getElementById('peopleSelect');
+    for (name in journeysList) {
+      var opt = document.createElement('option');
+      opt.value = name;
+      opt.innerHTML = name;
+      select.appendChild(opt);
+    }
+  });
 
