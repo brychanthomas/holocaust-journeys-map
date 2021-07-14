@@ -1,5 +1,5 @@
 {"Primo Levi":[
-  {lat: 51, lng: -3, zoom: 8, desc: "Location 1"},
-  {lat: 52, lng: -3, zoom: 8, desc: "Location 2"},
-  {lat: 53, lng: -3, zoom: 8, desc: "Location 3"}
+  {"lat": 51, "lng": -3, "zoom": 8, "desc": "Location 1"},
+  {"lat": 52, "lng": -3, "zoom": 8, "desc": "Location 2"},
+  {"lat": 53, "lng": -3, "zoom": 8, "desc": "Location 3"}
   ]}
