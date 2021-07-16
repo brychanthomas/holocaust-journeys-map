@@ -5,6 +5,7 @@ class Journey {
     this.marker = L.marker([0,0]).addTo(map);
     this.polyline = L.polyline([], {color: 'red'}).addTo(map);
     this.setDropdownVisibility(false);
+    this.setNextButtonVisibility(true);
     this.displayNextPlace();
   }
 
@@ -30,11 +31,16 @@ class Journey {
     document.getElementById("peopleDropdownDiv").style.display = vis ? "block" : "none";
   }
 
+  setNextButtonVisibility(vis) {
+    document.getElementById("nextButton").style.display = vis ? "block" : "none";
+  }
+
   endJourney() {
     map.removeLayer(this.marker);
     map.removeLayer(this.polyline);
     map.flyTo([50, 14], 4, {duration: 1});
     this.setDropdownVisibility(true);
+    this.setNextButtonVisibility(false);
   }
 }
 
