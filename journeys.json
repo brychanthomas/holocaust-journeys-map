@@ -1,8 +1,8 @@
 {"Primo Levi":
   [
     {
-      "lat": 45.0703,
-      "lng": 7.6868,
+      "lat": 45.068,
+      "lng": 7.682,
       "zoom": 7,
       "desc": "When Italy declares war on Britain and France as an ally of Germany in 1940, Primo Levi is studying Chemistry in the University of Turin. Since 1948, Jews had lost civil rights and were not allowed to enter university. However, those already studying were allowed to continue and Levi enrolled a year early, permitting him to carry on his studies."
     },
@@ -21,8 +21,8 @@
     {
       "lat": 46.83,
       "lng": 8.22,
-      "zoom": 5,
-      "desc": "While in Milan he is recruited to work for a Swiss company. While there he isn't subject to the racial laws."
+      "zoom": 6,
+      "desc": "While in Milan he is recruited to work for a Swiss company. He isn't subject to the racial laws while there."
     },
     {
       "lat": 45.014,
@@ -34,7 +34,7 @@
       "lat": 45.758,
       "lng": 7.689,
       "zoom": 8,
-      "desc": "As Jews are being arrested they flee to Amay where they believe they could hide. As the Italian resistance movement becomes active in the German-occupied zone, Levi attempts to form a small resistance group with some others. They are soon arrested by the Fascist militia."
+      "desc": "As Jews are being arrested they flee to Amay where they believe they could hide. The Italian resistance movement becomes more and more active in the German-occupied zone, and Levi attempts to form a small resistance group with some others. They are soon arrested by the Fascist militia."
     },
     {
       "lat": 44.822,
@@ -75,13 +75,13 @@
     {
       "lat": 49.035,
       "lng": 28.115,
-      "zoom": 7,
+      "zoom": 6,
       "desc": "On June 30th Levi leaves the transfer camp in a troop train headed for Odessa with 800 other Italians. They travel East to Zhmerynka."
     },
     {
       "lat": 53.028,
       "lng": 27.552,
-      "zoom": 7,
+      "zoom": 6,
       "desc": "Although they planned to head South to Odessa, they are forced to take the train North to Slutsk."
     },
     {
@@ -91,7 +91,43 @@
       "desc": "From there Levi walks and rides a horse cart to the Krasny Dom displaced persons camp in Staryya Darohi, where he works as a medical assistant."
     },
     {
-      "desc": "This is only a brief overview of some of the events that happened. You can read the full story in Primo Levi's books 'If This is a Man' and 'The Truce'."
+      "lat": 53.145,
+      "lng": 29.228,
+      "zoom": 7,
+      "desc": "After two months at the camp Russian marshal Semyon Timoshenko arrives and announces that the displaced people can begin making their way home. Levi begins his train journey back to Italy on the 15th of September."
+    },
+    {
+      "lat": 44.942,
+      "lng": 26.024,
+      "zoom": 5,
+      "desc": "Levi heads South and by the 23rd of September he has reached southern Romania."
+    },
+    {
+      "lat": 48.152,
+      "lng": 17.109,
+      "zoom": 5,
+      "desc": "Next he proceeds West through Hungary and into Slovakia, reaching Bratislava by the 7th of October."
+    },
+    {
+      "lat": 48.137,
+      "lng": 11.575,
+      "zoom": 5,
+      "desc": "By the 15th of October he has reached Munich after travelling through Austria into Germany."
+    },
+    {
+      "lat": 45.438,
+      "lng": 10.992,
+      "zoom": 5,
+      "desc": "He's reached Verona back in Italy by the 17th of October."
+    },
+    {
+      "lat": 45.068,
+      "lng": 7.682,
+      "zoom": 5,
+      "desc": "Finally, on the 19th of October 1945, he arrives back in Turin after 20 months away. Over the coming months he spends time recovering, making contact with surviving friends and family, and looking for work. In January 1946 he starts working for a paint factory outside Turin. The poor train services means that he stays in the factory dormitory during the week: here he starts to write the first draft of If This Is a Man."
+    },
+    {
+      "desc": "This is only a brief overview of some of the events that happened. You can read the full story in Primo Levi's books 'If This Is a Man' and 'The Truce'."
     }
   ]
 }
