@@ -18,7 +18,7 @@ class Journey {
       map.flyTo([p.lat, p.lng], p.zoom, {duration: 1});
     } else if (this.index == this.places.length-1) {
       this.marker.closePopup();
-      map.flyToBounds(this.polyline.getBounds());
+      map.flyToBounds(this.polyline.getBounds(), {duration: 2});
       this.polyline.bindPopup(this.places[this.index].desc).openPopup();
     }
     else {
@@ -33,7 +33,7 @@ class Journey {
   endJourney() {
     map.removeLayer(this.marker);
     map.removeLayer(this.polyline);
-    map.flyTo([50, 14], 4);
+    map.flyTo([50, 14], 4, {duration: 1});
     this.setDropdownVisibility(true);
   }
 }
