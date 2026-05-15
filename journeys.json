@@ -129,5 +129,73 @@
     {
       "desc": "This is only a brief overview of some of the events that happened. You can read the full story in Primo Levi's books 'If This Is a Man' and 'The Truce'."
     }
+  ],
+  "Elie Wiesel": [
+    {
+      "lat": 47.928,
+      "lng": 23.891,
+      "zoom": 6,
+      "desc": "Elie Wiesel is born in Sighet, Transylvania in 1928."
+    },
+    {
+      "lat": 47.928,
+      "lng": 23.891,
+      "zoom": 7,
+      "desc": "In 1941 Moishe the Beadle helps him study the Kabbalah. In 1942 all foreign Jews, including Moishe, are expelled from Sighet and loaded into cattle cars by the Hungarian police."
+    },
+    {
+      "lat": 47.928,
+      "lng": 23.891,
+      "zoom": 7,
+      "desc": "Towards the end of 1942 Moishe returns having escaped a concentration camp. He tries to warn the community, who dismiss him as mad."
+    },
+    {
+      "lat": 47.928,
+      "lng": 23.891,
+      "zoom": 7,
+      "desc": "In March 1944 the Germans invade and occupy Hungary. Döme Sztójay is appointed prime minister and begins to scale up the deportation of Jews."
+    },
+    {
+      "lat": 47.928,
+      "lng": 23.891,
+      "zoom": 7,
+      "desc": "Jews must hand over all valuables and are not allowed to attend a synagogue, travel by rail or be outside after 6pm. Later they are required to move to two ghettos in the city. Elie's house is already in one, so he can remain where he is."
+    },
+    {
+      "lat": 47.928,
+      "lng": 23.891,
+      "zoom": 7,
+      "desc": "In May 1944 the ghetto is liquidated. The Hungarian police make all the Jews line up and undergo dozens of roll calls."
+    },
+    {
+      "lat": 47.928,
+      "lng": 23.891,
+      "zoom": 7,
+      "desc": "In May 1944 the ghetto is liquidated. The Hungarian police make all the Jews line up and undergo dozens of roll calls."
+    },
+    {
+      "lat": 47.949
+      "lng": 23.877,
+      "zoom": 7,
+      "desc": "After being temporarily housed in the synagogue, which has been vandalised, they are taken to the train station where a convey of cattle cars is waiting. Eighty people are loaded into each car and they are sealed. A specific person is assigned to be in charge of each car, and if anyone escapes the person in charge will be shot. They do not know where they are going."
+    },
+    {
+      "lat": 48.717,
+      "lng": 21.249,
+      "zoom": 5,
+      "desc": "After two days they reach Kaschau and realise they are leaving Hungary. A German officer tells them that they are now under the authority of the German Army, and that if any of the 80 people in the car go missing they will all be shot. The doors are nailed shut."
+    },
+    {
+      "lat": 50.038,
+      "lng": 19.221,
+      "zoom": 5,
+      "desc": "Eventually they pull into a station with a sign reading 'Auschwitz', which nobody in the car has heard of before."
+    },
+    {
+      "lat": 50.027,
+      "lng": 19.203,
+      "zoom": 7,
+      "desc": "The train enters the camp and they are told to leave everything behind. Men and women are separated. Elie sees his mother and sister move away, and this is the last time he will ever see them. An inmate tells 15-year-old Elie to claim he's 18 and his 50-year-old father to claim he's 40. Dr. Mengele, an SS Officer, sorts people into two groups, and Elie and his father tell these lies to him."
+    },
   ]
 }
